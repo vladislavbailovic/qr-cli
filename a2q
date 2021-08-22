@@ -1,2 +1,3 @@
 #!/bin/bash
-python all-to-qr.py "$@"
+base=$( dirname $( readlink -f $0 ) )
+python "${base}/all-to-qr.py" "$@"
